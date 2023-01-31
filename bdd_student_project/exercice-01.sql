@@ -58,21 +58,21 @@ WHERE email LIKE '%.com%'
 
 SELECT *
 FROM student
-WHERE created_at < 2021-01-11 00:00:00 
+WHERE created_at < '2021-01-11 00:00:00'
 
 -- Exo 1.9
 -- Écrivez la requête qui permet de lister les projects dont la description contient pas la chaîne de caractères `Dolores`
 
 SELECT *
 FROM project
-WHERE description NOT LIKE 'Dolores'
+WHERE description NOT LIKE '%Dolores%'
 
 -- Exo 1.10
 -- Écrivez la requête qui permet de lister les projects dont la date de création est postérieure au 1er juillet 2021 inclus
 
 SELECT *
 FROM project
-WHERE start_date >= 2021-07-01 00:00:00
+WHERE start_date >= '2021-07-01 00:00:00'
 
 
 -- Exo 1.11
